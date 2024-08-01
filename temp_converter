@@ -1,0 +1,18 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+#Farenheit and Celcius Converter
+
+#get user input 
+#convert inital temp from string to float
+inital_temp = float(input("Enter temperature degree: "))
+temp_unit = input("Calculate Fahrenheit or Celcius (C/F)?: ")
+
+#convert temperature
+if temp_unit.upper() == 'F':
+    converted_temp = (inital_temp - 32 ) * 5 / 9
+    print (converted_temp)
+elif temp_unit.upper() == 'C':
+    converted_temp = inital_temp * 9 / 5 + 32
+    print (converted_temp)
+else:
+    print("Invalid Input !")
